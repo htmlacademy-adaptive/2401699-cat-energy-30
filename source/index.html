@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Название проекта</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Название проекта</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" href="source/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="scripts/index.js" defer></script>
+  </head>
 
 <body class="page__body">
   <header class="main-header">
@@ -49,6 +53,20 @@
   <main class="main-container">
     <h1 class="main-container__title">Функциональное питания для котов</h1>
     <p class="main-container__title-text">Занялся собой? Займись котом!</p>
+    <picture>
+      <source srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x"
+        media="(min-width: 1440px)" type="image/webp" width="552" height="499">
+      <source srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x"
+        media="(min-width: 768px)" type="image/webp" width="709" height="609">
+      <source srcset="images/images/index-can-mobile@1x.webp 1x, images/images/index-can-mobile@1x.webp 2x" type="image/webp"
+        width="280" height="270">
+      <source srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x"
+        media="(min-width: 1440px)" type="image/png" width="552" height="499">
+      <source srcset="images/images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x"
+        media="(min-width: 768px)" type="image/png" width="709" height="609">
+      <img class="image image--color" src="images/index-can-mobile@1x.png"
+        srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов.">
+    </picture>
     <button class="main-container__button">Подобрать программу</button>
     <section class="features">
       <div class="features__wrapper">
@@ -109,15 +127,39 @@
           <span class="sample__sum">Затраты на питание: 15 000 РУБ.</span>
         </div>
         <div class="sample__photo">
-          <img class="image" src="images/cat-before.jpg" width="280" height="256"
-          alt="Фото кота до специального питания.">
+          <picture>
+            <source srcset="images/cat-before-desktop@1x.webp 1x, images/cat-before-desktop@2x.webp 2x"
+              media="(min-width: 1440px)" type="image/webp" width="560" height="512">
+            <source srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x"
+              media="(min-width: 768px)" type="image/webp" width="560" height="512">
+            <source srcset="images/images/cat-before-mobile@1x.webp 1x, images/images/cat-before-mobile@1x.webp 2x" type="image/webp"
+              width="280" height="256">
+            <source srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x"
+              media="(min-width: 1440px)" type="image/png" width="560" height="512">
+            <source srcset="images/images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x"
+              media="(min-width: 768px)" type="image/png" width="560" height="512">
+            <img class="image image--color" src="images/cat-before-mobile@1x.png"
+              srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до специального питания.">
+          </picture>
         </div>
         <div class="sample__slider">
             <input class="sample__slider-button" type="range">
         </div>
         <div class="sample__photo">
-          <img class="image" src="images/cat-after.jpg" width="280" height="256"
-          alt="Фото кота после специального питания.">
+          <picture>
+            <source srcset="cat-after-desktop@1x.webp 1x, images/cat-after-desktop@2x.webp 2x"
+              media="(min-width: 1440px)" type="image/webp" width="560" height="512">
+            <source srcset="cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x"
+              media="(min-width: 768px)" type="image/webp" width="560" height="512">
+            <source srcset="images/images/cat-after-mobile@1x.webp 1x, images/images/cat-after-mobile@1x.webp 2x" type="image/webp"
+              width="280" height="256">
+            <source srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x"
+              media="(min-width: 1440px)" type="image/png" width="560" height="512">
+            <source srcset="images/images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x"
+              media="(min-width: 768px)" type="image/png" width="560" height="512">
+            <img class="image image--color" src="images/cat-after-mobile@1x.png"
+              srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до специального питания.">
+          </picture>
         </div>
       </div>
     </section>
